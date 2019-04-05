@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             adapter = movieAdapter
         }
         add_movie_btn.setOnClickListener{
-            FetchMovie().execute("")
+            FetchMovie().execute("${movie_name_et.text}")
         }
 
     }
