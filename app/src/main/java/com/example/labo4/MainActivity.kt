@@ -35,6 +35,9 @@ class MainActivity : AppCompatActivity() {
             layoutManager = viewManager
             adapter = movieAdapter
         }
+        add_movie_btn.setOnClickListener{
+            FetchMovie().execute("")
+        }
 
     }
 
